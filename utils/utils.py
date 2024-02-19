@@ -20,3 +20,12 @@ def generate_random_email():
     domain = 'gmail.com'
     name_part = ''.join(random.choice(string.ascii_lowercase) for i in range(8))
     return f"{name_part}@{domain}"
+
+def generate_random_day():
+    return str(random.randint(1,31))
+
+def generate_random_month():
+    return str(random.randint(1, 12))
+
+def generate_random_year():
+    return str(random.randint(1900, 2000))
